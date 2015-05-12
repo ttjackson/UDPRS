@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_marginLeft="200dp"
+    android:layout_marginTop="200dp"
+    >
     <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:id="@+id/item_image"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/item_name"
-        android:textSize="20pt"
+        android:textSize="30pt"
         android:layout_toRightOf="@+id/item_image"
         android:layout_alignTop="@+id/item_image"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/item_discription"
-        android:textSize="15pt"
+        android:textSize="20pt"
         android:layout_below="@+id/item_name"
         android:layout_alignLeft="@+id/item_name"/>
 </RelativeLayout>
