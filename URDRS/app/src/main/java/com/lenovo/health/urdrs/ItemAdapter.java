@@ -56,6 +56,7 @@ public class ItemAdapter extends BaseAdapter {
         }
         viewHolder.titleview.setText(itemDatas.get(position).getTitle());
         viewHolder.introView.setText(itemDatas.get(position).getIntro());
+        viewHolder.imageView.setImageResource(itemDatas.get(position).getDrawableID());
         return convertView;
     }
 

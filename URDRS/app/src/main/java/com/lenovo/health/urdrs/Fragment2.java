@@ -55,7 +55,14 @@ public class Fragment2 extends Fragment {
         data.setType(1);
         data.setTitle("title");
         data.setIntro("intro");
+        data.setDrawableID(R.drawable.item_background2);
         itemDatas.add(data);
+        ItemData data2 = new ItemData();
+        data2.setType(1);
+        data2.setTitle("title");
+        data2.setIntro("intro");
+        data2.setDrawableID(R.drawable.item_unselected);
+        itemDatas.add(data2);
         ItemAdapter adapter = new ItemAdapter(getActivity(), itemDatas);
         if (listView == null) {
             System.out.println("null");

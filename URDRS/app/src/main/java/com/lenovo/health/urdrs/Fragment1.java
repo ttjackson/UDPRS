@@ -108,7 +108,9 @@ public class Fragment1 extends Fragment {
         criteria.setPowerRequirement(Criteria.POWER_LOW);
         locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
         String provider = locationManager.getBestProvider(criteria, true);
-        System.out.println(provider);
+        //String provider = locationManager.getProviders(true);
+        if (provider != null)
+            System.out.println(provider);
         Location lastKnownLocation = locationManager.getLastKnownLocation(provider);
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 1, locListner);
         updateWithNewLocation(lastKnownLocation);
